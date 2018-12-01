@@ -1,0 +1,23 @@
+name:                day1
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/jisantuc/day1#readme
+license:             BSD3
+license-file:        LICENSE
+author:              James Santucci
+maintainer:          james.santucci@gmail.com
+copyright:           2018 James Santucci
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable day1
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , attoparsec >= 0.13.2.2 && < 0.14
+                     , bytestring >= 0.10.8.2 && < 0.11
+  default-extensions:  OverloadedStrings
