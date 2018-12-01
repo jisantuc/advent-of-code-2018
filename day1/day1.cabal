@@ -4,14 +4,12 @@ version:             0.1.0.0
 -- description:
 homepage:            https://github.com/jisantuc/day1#readme
 license:             BSD3
-license-file:        LICENSE
 author:              James Santucci
 maintainer:          james.santucci@gmail.com
 copyright:           2018 James Santucci
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
-extra-source-files:  README.md
 
 executable day1
   hs-source-dirs:      src
