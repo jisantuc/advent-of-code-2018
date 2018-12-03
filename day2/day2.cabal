@@ -3,7 +3,7 @@ version:             0.1.0.0
 -- synopsis:
 -- description:
 homepage:            https://github.com/jisantuc/day2#readme
-license:             BSD3
+license:             MIT
 author:              James Santucci
 maintainer:          james.santucci@gmail.com
 copyright:           2018 James Santucci
