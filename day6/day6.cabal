@@ -1,0 +1,43 @@
+name:                day6
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/jisantuc/day6#readme
+license:             MIT
+author:              James Santucci
+maintainer:          james.santucci@gmail.com
+copyright:           2018 James Santucci
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  ghc-options:         -Wall
+  exposed-modules:     Lib
+  build-depends:       base >= 4.7 && < 5
+                     , containers >= 0.5.11 && < 0.6
+  default-language:    Haskell2010
+
+executable day6-exe
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , day6
+  default-language:    Haskell2010
+
+test-suite day6-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , day6
+                     , hspec
+                     , containers >= 0.5.11 && < 0.6
+  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/jisantuc/day6
